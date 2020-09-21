@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+/* --------Color Variables-------- */
+:root {
+  --primaryBlue:#3ea6ff;
+  --secondaryBlue:#2ea4e9;
+  --darkBlue:#2a2a72;
+  --primaryWhite: #f3f3f3;
+  --primaryDark: #232528;
+  --primaryYellow: #ffa400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* --------Global Classes-------- */
+
+
+/* --------Global Classes (TEXT) -------- */
+.font-size-12 {
+    font-size: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.font-size-14 {
+  font-size: 14px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.font-montserrat {
+  font-family: 'Montserrat';
+}
+
+/* --------Body-------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Arial', sans-serif !important;
+  background: var(--primaryWhite) !important;
+}
+
+
+/* --------Navbar-------- */
+#header {
+  background-color: var(--primaryDark);
+}
+
+#header a {
+  color: #f3f3f3;
+}
+
+#header button {
+  color: #f3f3f3;
+}
+
+#header .phoneyWorld {
+  color: var(--primaryYellow);
+}
+
+/* --------Carousel-------- */
+#carousel {
+  z-index: 0;
+}
+
+/* --------Single Product component-------- */
+.cardContainer {
+  border: 0.04rem solid rgba(0, 0, 0, 0.2);
+}
+
+.cardContainer:hover {
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.2);
+}
+
+.cardImg:hover {
+  transform: scale(1.1);
+  transition: all 0.5s linear;
+}
+
+/* --------Product details page-------- */
+#policy a {
+  line-height: 18px;
+}
+
+.policyIcon {
+  margin-bottom: 10px;
+}
+
+/* --------Modal-------- */
+#modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); 
+}
+
+#modal {
+  background: whitesmoke;
+  border-radius: 8px;
+}
+
+.modalImg {
+  width: 55vw;
+  height: auto;
+}
+
+/* --------Cart Page-------- */
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 12px !important;
+  color: var(--primaryDark);
+  border-radius: 0 !important;
+  border: 1.9px solid var(--primaryDark) !important;
+}
+
+.btn-black:hover {
+  background: var(--primaryDark) !important;
+  color: var(--primaryWhite) !important;
+}
+
+#cartCounter {
+  cursor: default;
+}
+
+.removeIcon {
+  color: orangered;
+}
+
+.removeIcon:hover {
+  cursor: pointer;
+}
+
+.clearBtn:hover {
+  color: red !important;
+}
+
+/* --------Footer-------- */
+/* To make footer stay at bottom */
+.page-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content-wrapper {
+  flex: 1;
 }
