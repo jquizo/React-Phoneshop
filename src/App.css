@@ -52,6 +52,29 @@ body {
   color: var(--primaryYellow);
 }
 
+.rightNavBtn {
+  display: flex;
+}
+
+@media only screen and (max-width: 820px) {
+  #header .phoneyWorld  {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .rightNavBtn {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .homeLink  {
+    display: none;
+  }
+}
+
+
 /* --------Carousel-------- */
 #carousel {
   z-index: 0;
@@ -93,10 +116,18 @@ body {
 #modal {
   background: whitesmoke;
   border-radius: 8px;
+  width: 60vw;
+}
+
+@media only screen and (max-width: 650px) {
+  #modal {
+    width: 90vw;
+    height: auto;
+  }
 }
 
 .modalImg {
-  width: 55vw;
+  width: 60vw;
   height: auto;
 }
 

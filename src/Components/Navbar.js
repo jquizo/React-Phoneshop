@@ -7,29 +7,30 @@ export default class Navbar extends Component {
         return (
             <React.Fragment>
             <nav id="header" className="navbar navbar-expand-md px-sm-5">
-                <Link to="/" className="navbar-brand d-flex font-weight-bold phoneyWorld">PhoneyWorld</Link>
+                <Link to="/" className="navbar-brand  font-weight-bold phoneyWorld">PhoneyWorld</Link>
                 
             {/* ----Navbar left side---- */}
-                <div className="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                <div className="navbar-collapse" id="collapsingNavbar3">
                 <ul className="navbar-nav w-100">
-                    <li className="nav-item active">
-                        <Link to="/" className="nav-link productLink">Home</Link>
+                    <li className="nav-item active homeLink">
+                        <Link to="/" className="nav-link ">Home</Link>
                     </li>
                 </ul>
 
             {/* ----Navbar right side---- */}
-                <Link to="/cart" className="ml-auto">
+            <div className="rightNavBtn">
+                <Link to="/cart">
                     <button className="btn">
                         <i className="fas fa-sign-in-alt">&nbsp;Login</i>  
                     </button>
                 </Link>
 
-                <Link to="/cart" className="ml-auto">
+                <Link to="/cart">
                     <button className="btn">
                         <i className="fas fa-shopping-cart">&nbsp;Cart</i>  
                     </button>
                 </Link>
-                
+            </div>    
                
                 {/* <div className="d-flex align-items-center">
                     <a href="#" className="px-3">Login</a>
