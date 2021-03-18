@@ -10,7 +10,6 @@ export default class ProductList extends Component {
                 <Carousel />
                 <div>
                 <h4 id="productsSection"className="m-4 text-center font-weight-bold">Our Products</h4>
-                    <h6 className="m-4 text-center font-weight-bold text-danger">MOCK WEBSITE ! DO NOT PURCHASE</h6>
                     <div className="d-flex flex-row flex-wrap m-4 productCardList">
                         <ProductDataConsumer>
                             {value => { 

@@ -39,9 +39,10 @@ export default class ProductDetails extends Component {
                              {/* Product text */}
                              <div className="col-10 mx-auto col-md-6 text-capitalize">
                                  <h3>{title} </h3>
-                                 <h4 className="text-muted">{company}</h4>
+                                 <h4 className="text-muted">{company} </h4>
                                 <hr/>
-                            <p>Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore.</p>
+                                <strong>{title} | ${price}</strong> <br/>
+                            <p>{info}</p>
 
                             {/* Product policy */}
                             <div id="policy" className="d-flex justify-content-around">
@@ -98,7 +99,7 @@ export default class ProductDetails extends Component {
                                 {info}
                             </Tab>
                             <Tab className="m-4" eventKey="specifications" title="Specifications">
-                                {title} {price} <br/>
+                                <strong>{title} ${price}</strong> <br/>
                                 Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore.
                             </Tab>
                         </Tabs>
